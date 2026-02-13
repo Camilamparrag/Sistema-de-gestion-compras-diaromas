@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaromas | Gestión de Inventario</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-circle"></div>
+                <h2>Diaromas</h2>
+            </div>
+            <nav>
+                <button class="nav-item active" data-tab="resumen">Resumen</button>
+                <button class="nav-item" data-tab="inventario">Inventario</button>
+                <button class="nav-item" data-tab="prediccion">Predicciones</button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Panel de Control</h1>
+                <p id="current-date"></p>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <h3>Alta Rotación</h3>
+                    <p id="top-product">Cargando...</p>
+                </div>
+                <div class="stat-card alert">
+                    <h3>Quiebre de Stock</h3>
+                    <p id="stock-alerts">0 productos</p>
+                </div>
+                <div class="stat-card purchase">
+                    <h3>Próxima Compra</h3>
+                    <p id="next-purchase">Sugerido: 3 días</p>
+                </div>
+            </section>
+
+            <section class="table-container">
+                <div class="table-header">
+                    <h2>Estado de Productos</h2>
+                    <button class="btn-add">+ Registrar Venta</button>
+                </div>
+                <table id="products-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Stock</th>
+                            <th>Ventas Mes</th>
+                            <th>Estado</th>
+                            <th>Sugerencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
